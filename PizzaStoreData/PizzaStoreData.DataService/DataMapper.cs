@@ -9,7 +9,7 @@ namespace PizzaStoreData.DataService
 {
     public class DataMapper
     {
-        #region Order Managements
+        #region Order Management
         public static OrderDAO MapToOrderDAO(Order orderToMap)
         {
             OrderDAO order = new OrderDAO();
