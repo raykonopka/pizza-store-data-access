@@ -158,9 +158,9 @@ namespace PizzaStoreData.DataService
 
 
 
-        public bool postOrder(OrderDAO newOrder)
+        public bool PostNewOrder(OrderDAO newOrder)
         {
-            return db.AddNewOrder(newOrder);
+            return db.PostOrder(DataMapper.MapToOrder(newOrder));
         }
         #endregion
 

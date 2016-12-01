@@ -26,8 +26,8 @@ namespace PizzaStoreData.DataService
 
         //Order Related
         [OperationContract]
-        bool postOrder(OrderDAO newOrder);
-
+        bool PostNewOrder(OrderDAO newOrder);
+ 
 
 
         //Pizza Options

@@ -25,6 +25,21 @@ namespace PizzaStoreData.DataService
             return order;
         }
 
+        public static Order MapToOrder(OrderDAO orderDAOToMap)
+        {
+            Order order = new Order();
+
+            order.Id = orderDAOToMap.Id;
+            order.Subtotal = orderDAOToMap.Subtotal;
+            order.Taxes = orderDAOToMap.Taxes;
+            order.Total = orderDAOToMap.Total;
+            order.OrderDateTime = orderDAOToMap.Timestamp;
+            order.CustomerId = orderDAOToMap.Customer;
+            order.PaymentMethodId = orderDAOToMap.PaymentMethod;
+
+            return order;
+        }
+
         public static PaymentMethodDAO MapToPaymentMethodDAO(PaymentMethod paymentMethodToMap)
         {
             PaymentMethodDAO paymentMethod = new PaymentMethodDAO();

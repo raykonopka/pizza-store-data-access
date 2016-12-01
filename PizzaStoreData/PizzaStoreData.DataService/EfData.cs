@@ -102,17 +102,9 @@ namespace PizzaStoreData.DataAccess
 
         #endregion
 
-        public bool AddNewOrder(OrderDAO orderDAOReceived)
-        {
-            Order newOrder = new Order();
-            newOrder.PaymentMethodId = orderDAOReceived.PaymentMethod;
-            newOrder.OrderDateTime = orderDAOReceived.Timestamp;
-            newOrder.CustomerId = orderDAOReceived.Customer;
-            newOrder.Subtotal = orderDAOReceived.Subtotal;
-            newOrder.Taxes = orderDAOReceived.Taxes;
-            newOrder.Total = orderDAOReceived.Total;
-
-            db.Orders.Add(newOrder);
+        public bool PostOrder(Order orderReceived)
+        { 
+            db.Orders.Add(orderReceived);
             db.SaveChanges();
             return true;
         }
