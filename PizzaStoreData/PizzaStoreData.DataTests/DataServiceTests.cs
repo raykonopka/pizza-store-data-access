@@ -45,7 +45,7 @@ namespace PizzaStoreData.DataTests
             orderDAOReceived.Total = decimal.Parse("12.00"); ;
 
 
-            bool actual = dataService.postOrder(orderDAOReceived);
+            bool actual = dataService.PostNewOrder(orderDAOReceived);
 
             Assert.True(actual);
         }
