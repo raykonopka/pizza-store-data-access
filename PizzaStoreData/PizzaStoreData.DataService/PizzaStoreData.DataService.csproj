@@ -213,7 +213,9 @@
     <Content Include="PizzaStoreDataModel.edmx.diagram">
       <DependentUpon>PizzaStoreDataModel.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\AWS-EC2-PizzaStoreDataService.pubxml" />
+    <None Include="Properties\PublishProfiles\AWS-EC2-PizzaStoreDataService.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
