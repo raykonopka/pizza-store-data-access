@@ -13,7 +13,7 @@ namespace PizzaStoreData.DataAccess
 
         #region Data Access - Get Lists
         
-        //Order Management
+        //Order Management.
         public List<Order> GetOrders()
         {
             return db.Orders.ToList();
